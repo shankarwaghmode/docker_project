@@ -1,0 +1,49 @@
+RISE_ID: 2020.05.19.01
+Aim:
+The main goal of this project is to launch an Drupal container management system over the mysql database server and manage its stuff by phpmyadmin. These things must be done in a single click i.e we want to make the things automated.
+Note:
+Here i am using rhel:8 os over an virtualization tool oracle virtual box 
+
+Requirements :
+⦁	Docker must be installed in your system  
+	→ this is typically done by at most configuring our yum repositories. 
+ 	→ then using yum we install dockers
+⦁	Docker compose must be installed in your system 
+⦁	We need to install images in our docker :
+→ #docker pull <image_name:version> 
+⦁	Images required :
+⦁	Mysql:5.7
+⦁	Drupal:latest
+⦁	phpmyadmin/phpmyadmin
+      5. We must take note that all through here we have mentioned that the images are required but still if we don't have them then also our code (docker-compose.yml) automatically downla=oad and configure for us.
+  
+Steps :
+⦁	Docker-compose normally supports yml file it run only docker-compose.yml file so we need to create an yml file for this purpose we create a separate workspace compose and store the file there  
+
+⦁	Next using the yml format we create an yml file  
+ 
+ 
+
+⦁	We exit from vim text editor by pressing esc then  :wq 
+⦁	Further to run the code use docker-compose up command 
+ 
+ 
+
+⦁	Now our container are launched and ready for use 
+ 
+
+
+
+⦁	At the most we have not activated our drupal so we would get its databases empty 
+
+⦁	Now we launch our drupal:latest
+   
+
+⦁	Now when we see our database in phpmyadmin we would see lots of data stored over it  
+
+
+
+
+
+
+        
