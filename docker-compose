@@ -9,7 +9,7 @@ services:
                         MYSQL_ROOT_PASSWORD: 8677
                         MYSQL_USER: shankar1
                         MYSQL_PASSWORD: 8677
-                        MYSQL_DATABASE: mydata                  
+                        MYSQL_DATABASE: drupal_db                  
         phpos:
                 image: phpmyadmin/phpmyadmin
                 restart: always
@@ -32,9 +32,9 @@ services:
                 volumes:
                         - my_project:/var/www/html
                 environment:
-                        POSTGRES_DB: mydata
+                        POSTGRES_DB: drupal_db
                         POSTGRES_USER: shankar1
                         POSTGRES_HOST: myos 
                         POSTGRES_PASSWORD: 8677                 
 volumes:        
-        my_project:
+        drupal_db:
