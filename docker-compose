@@ -37,4 +37,4 @@ services:
                         POSTGRES_HOST: myos 
                         POSTGRES_PASSWORD: 8677                 
 volumes:        
-        drupal_db:
+        my_project:
